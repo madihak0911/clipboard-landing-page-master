@@ -1,0 +1,269 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Desktop Style (1440px) */
+body {
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', 'Poppins', sans-serif;
+  background-image: url(images/bg-header-desktop.png), linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1));
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  text-align: center;
+  overflow-x: hidden;
+  transition: 0.15s;
+  margin-top: 100px;
+}
+
+.btn { outline:none !important; box-shadow:unset; }
+
+.lutfi {
+  background: none;
+  margin: auto;
+  /* width: 660px; */
+  width: 46rem;
+}
+
+.lutfi .logo {
+  width: 6rem;
+  display: block;
+  margin: auto;
+}
+
+.title {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+}
+.title-2 { font-size: 2rem; }
+.title-desc { font-size: 24px; }
+
+.desc {
+  color: hsl(201, 11%, 66%);
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+  line-height: 170%;
+}
+
+.btn-download_box {
+  margin-top: 2.5rem;
+}
+
+.btn-download:nth-child(1) {
+  cursor: pointer;
+  background: hsl(171, 66%, 44%);
+  color: #FDF6F0;
+  -webkit-filter: drop-shadow(0px 2px 0px rgba(58, 145, 132,1));
+  filter: drop-shadow(0px 2px 0px rgba(58, 145, 132,1));
+  transition: 0.3s;
+}
+.btn-download:nth-child(1):hover {
+  box-shadow: 0 .2rem 2rem rgba(37, 217, 190, .175);
+  transform: scale(1.02);
+}
+
+.btn-download:nth-child(2) {
+  cursor: pointer;
+  background: hsl(233, 100%, 69%);
+  color: #FDF6F0;
+  -webkit-filter: drop-shadow(0px 2px 0px rgba(78, 91, 173,1));
+  filter: drop-shadow(0px 2px 0px rgba(78, 91, 173,1));
+  transition: 0.3s;
+}
+.btn-download:nth-child(2):hover {
+  box-shadow: 0 .2rem 2rem rgba(135, 148, 250, .175);
+  transform: scale(1.02);
+}
+
+.info-box {
+  width: 46rem;
+  margin-top: 5.5rem;
+}
+.info-box2 {
+  width: 46rem;
+  margin-top: 15rem;
+}
+.info-box-alt {
+  margin-top: 5.5rem;
+}
+.info-box-alt2 {
+  margin-top: 7rem;
+}
+
+.info { margin-bottom: 5.5rem; }
+
+.img-comp_box img, .img-devices_box img,
+.enterprise1, .enterprise2, .enterprise3, .enterprise4 { width: 50rem; }
+
+.img-comp_box {
+  margin-right: 4rem;
+}
+
+.img-comp {
+  position: absolute;
+  right: 0vw;
+}
+
+.img-devices_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  background: rgba(0,0,0,.05);
+  margin-top: 6rem;
+}
+
+.logo-footer img {
+  width: 4rem;
+}
+
+.footer .footer-link {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.footer .footer-link, .footer .footer-media_link a { transition: 0.15s; }
+
+.footer .footer-link a {
+  color:hsl(210, 10%, 33%);
+  font-size: 16px;
+  opacity: 0.8;
+}
+.footer .footer-media_link a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+
+
+
+/* Mobile Style (375px) */
+@media (max-width: 577px) {
+
+  body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', 'Poppins', sans-serif;
+    background-image: url(images/bg-header-mobile.png), linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1));
+    overflow-x: hidden;
+  }
+
+  .lutfi {
+    background: none;
+    margin: auto;
+    width: unset;
+  }
+
+  .lutfi .logo {
+    width: 6.2rem;
+    display: block;
+    margin-top: 4rem !important;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 1.5rem !important;
+  }
+  .title-2, .title-2_mobile { font-size: 2rem; margin-bottom: 0.8rem !important; }
+  .title-desc {
+    font-size: 24px;
+    margin-bottom: 10px !important;
+  }
+
+  .desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+  }
+
+  .btn-download_box {
+    margin-top: 2.2rem;
+  }
+
+  .btn-download:nth-child(1), .btn-download:nth-child(2) {
+    width: 100%;
+  }
+  .btn-download:nth-child(1) { margin-bottom: 20px; }
+
+  .info-box {
+    width: unset;
+    margin-top: 5.5rem;
+  }
+  .info-box2 {
+    width: unset;
+    margin-top: 10rem;
+  }
+  .info-box-alt {
+    margin-top: 5rem !important;
+  }
+  .info-box-alt2 {
+    margin-top: 7rem;
+  }
+
+  .info { margin-bottom: 4rem !important; }
+
+  .img-comp_box {
+    margin-right: 4rem;
+  }
+
+  .img-comp, .img-devices_box {
+    position: relative;
+    right: unset;
+  }
+  /* .img-comp img, .img-devices_box img {
+    width: 22rem;
+  } */
+
+  .img-comp_box img { width: 21rem; }
+
+  .img-devices_box img,
+  .enterprise1, .enterprise2, .enterprise3, .enterprise4 { width: 22rem; }
+
+  .img-devices_box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img[alt="Blacklist"] { margin-top: 1rem !important; }
+
+  img[alt="Blacklist"], img[alt="Plain Text"], img[alt="Sneak Preview"] {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .enterprise1, .enterprise2, .enterprise3, .enterprise4 {
+    margin-bottom: 5rem !important;
+  }
+
+  .footer {
+    background: rgba(0,0,0,.05);
+    margin-top: 6rem;
+  }
+
+  .logo-footer img {
+    width: 3.8rem;
+    margin-bottom: 2rem !important;
+  }
+
+  .footer .footer-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .footer-link a {
+    font-size: 16px;
+    margin-bottom: 1rem !important;
+  }
+
+  .footer-media_link { margin-top: 1.2rem !important; }
+  .footer-media_link a.mr-3 {
+    margin-right: 2rem !important;
+  }
+
+}
